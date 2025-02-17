@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "e9f42782-c43c-4223-9ace-359ec1ae4cb3",
+		"name": "crud api",
+		"description": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41177574"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/apricrud/index.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apricrud",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ind",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/apricrud/index.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apricrud",
+						"index.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eli",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/apricrud/eliminar.php?id=2&id=3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apricrud",
+						"eliminar.php"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2"
+						},
+						{
+							"key": "id",
+							"value": "3"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "guardar",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "brandon",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "brandon@email.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "81818181818",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apricrud/guardar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apricrud",
+						"guardar.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "act",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "nombre",
+							"value": "carlos lopez",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "carlos@email.com",
+							"type": "text"
+						},
+						{
+							"key": "telefono",
+							"value": "5555555555",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost/apricrud/actualizar.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"apricrud",
+						"actualizar.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
